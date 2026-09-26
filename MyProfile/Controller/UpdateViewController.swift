@@ -5,14 +5,11 @@
 //  Created by User on 26/09/26.
 //
 
-import SwiftUI
+import UIKit
 
-struct UpdateViewController: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class UpdateViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
-}
-
-#Preview {
-    UpdateViewController()
 }
