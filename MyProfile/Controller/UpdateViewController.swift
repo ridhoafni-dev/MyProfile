@@ -23,7 +23,8 @@ class UpdateViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        ProfileModel.synchronize()
+        
+        print("ProfileModel.email: \(ProfileModel.email)")
         
         nameTextField.text = ProfileModel.name
         emailTextField.text = ProfileModel.email

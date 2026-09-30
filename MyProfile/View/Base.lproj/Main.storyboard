@@ -10,7 +10,7 @@
         <!--Create View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CreateViewController" customModule="MyProfile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateScene" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CreateViewController" customModule="MyProfile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
         <!--Home View Controller-->
         <scene sceneID="lIc-dK-Me1">
             <objects>
-                <viewController id="coR-Ss-dMb" customClass="HomeViewController" customModule="MyProfile" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScene" useStoryboardIdentifierAsRestorationIdentifier="YES" id="coR-Ss-dMb" customClass="HomeViewController" customModule="MyProfile" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GDn-6x-O3m">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -371,9 +371,9 @@
                     <navigationItem key="navigationItem" id="bl7-oW-DCd"/>
                     <connections>
                         <outlet property="cancelButton" destination="P1D-Xl-O68" id="MAM-EO-2lW"/>
-                        <outlet property="emailTextField" destination="UIo-WK-1t8" id="ffV-6b-c3F"/>
+                        <outlet property="emailTextField" destination="hkR-w0-O5Y" id="lUZ-dx-rdi"/>
                         <outlet property="nameTextField" destination="mJV-d3-kGh" id="C0p-e6-9sn"/>
-                        <outlet property="professionTextField" destination="UIo-WK-1t8" id="2aB-KH-vRA"/>
+                        <outlet property="professionTextField" destination="UIo-WK-1t8" id="EnI-yo-rhQ"/>
                         <outlet property="saveButton" destination="Q1O-2L-4t1" id="LgW-ug-CoG"/>
                     </connections>
                 </viewController>
