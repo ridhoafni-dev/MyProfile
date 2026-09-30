@@ -16,12 +16,25 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        editButton.pinkColor()
+        resetButton.pinkColor()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        ProfileModel.synchronize()
+        
+        detailLabel.text = "\(ProfileModel.name), as \(ProfileModel.profession)"
+        emailLabel.text = ProfileModel.email
+    }
+    
     @IBAction func editAccount(_ sender: Any) {
+        self.performSegue(withIdentifier: "moveToUpdate", sender: self)
     }
     
     @IBAction func resetAccount(_ sender: Any) {
+        if ProfileModel.deleteAll() {
+            self.performSegue(withIdentifier: "moveToCreate", sender: self)
+        }
     }
     
 

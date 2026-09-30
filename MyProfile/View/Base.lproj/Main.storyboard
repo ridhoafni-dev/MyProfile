@@ -113,7 +113,7 @@
                         <outlet property="emailTextField" destination="xRy-rI-eXR" id="AJ0-H3-bh4"/>
                         <outlet property="nameTextField" destination="dWN-J6-H0D" id="Xzp-qd-9Ze"/>
                         <outlet property="professionTextField" destination="gSO-vv-wwj" id="iht-al-pXl"/>
-                        <segue destination="coR-Ss-dMb" kind="show" identifier="moveToHome" id="csx-ch-qKc"/>
+                        <segue destination="coR-Ss-dMb" kind="showDetail" identifier="moveToHome" id="csx-ch-qKc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -152,14 +152,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMr-Oi-fWq">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SMr-Oi-fWq">
                                 <rect key="frame" x="30" y="511.33333333333331" width="333" height="34.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdt-Oh-d7G" customClass="RoundButton" customModule="MyProfile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162.66666666666666" height="34.333333333333336"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="q61-Ql-4yU"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Edit"/>
                                         <userDefinedRuntimeAttributes>
@@ -178,10 +179,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P6-vd-Rzb" customClass="RoundButton" customModule="MyProfile" customModuleProvider="target">
-                                        <rect key="frame" x="166.66666666666663" y="0.0" width="166.33333333333337" height="34.333333333333336"/>
+                                        <rect key="frame" x="170.66666666666663" y="0.0" width="162.33333333333337" height="34.333333333333336"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="uGl-FL-Eau"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Reset"/>
                                         <userDefinedRuntimeAttributes>
@@ -282,14 +284,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBM-pa-LvA">
-                                <rect key="frame" x="76.666666666666686" y="645" width="240" height="34.333333333333371"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cBM-pa-LvA">
+                                <rect key="frame" x="30" y="645" width="333" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1O-2L-4t1" customClass="RoundButton" customModule="MyProfile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162.66666666666666" height="34.333333333333336"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="9uA-Te-9PN"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                         <userDefinedRuntimeAttributes>
@@ -303,12 +306,17 @@
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveAccount:" destination="grP-ZY-GhT" eventType="touchUpInside" id="Flj-ZO-5yo"/>
+                                            <action selector="saveButton:" destination="grP-ZY-GhT" eventType="touchUpInside" id="aDd-oF-DJS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1D-Xl-O68" customClass="RoundButton" customModule="MyProfile" customModuleProvider="target">
-                                        <rect key="frame" x="120" y="0.0" width="120" height="34.333333333333336"/>
+                                        <rect key="frame" x="170.66666666666663" y="0.0" width="162.33333333333337" height="34.333333333333336"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="WC6-G7-TiT"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
                                         <userDefinedRuntimeAttributes>
@@ -322,6 +330,9 @@
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelAccount:" destination="grP-ZY-GhT" eventType="touchUpInside" id="JdT-6k-SCl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -336,6 +347,7 @@
                             <constraint firstItem="hkR-w0-O5Y" firstAttribute="leading" secondItem="Son-yk-0c5" secondAttribute="leading" constant="30" id="JgS-M8-l7u"/>
                             <constraint firstItem="bwT-VG-PKm" firstAttribute="leading" secondItem="Son-yk-0c5" secondAttribute="leading" constant="30" id="K6k-YB-wZB"/>
                             <constraint firstItem="Son-yk-0c5" firstAttribute="trailing" secondItem="uS4-z5-iHC" secondAttribute="trailing" constant="30" id="OdY-eB-G2h"/>
+                            <constraint firstItem="Son-yk-0c5" firstAttribute="trailing" secondItem="cBM-pa-LvA" secondAttribute="trailing" constant="30" id="SdL-66-aM7"/>
                             <constraint firstItem="Son-yk-0c5" firstAttribute="trailing" secondItem="mJV-d3-kGh" secondAttribute="trailing" constant="30" id="UJs-Zq-tXj"/>
                             <constraint firstItem="Son-yk-0c5" firstAttribute="trailing" secondItem="UIo-WK-1t8" secondAttribute="trailing" constant="30" id="Y0g-Mb-sgV"/>
                             <constraint firstItem="HUI-Bq-164" firstAttribute="top" secondItem="Son-yk-0c5" secondAttribute="top" constant="40" id="Zty-8V-iwh"/>
@@ -346,6 +358,7 @@
                             <constraint firstItem="HUI-Bq-164" firstAttribute="centerX" secondItem="KIz-F5-DtG" secondAttribute="centerX" id="eha-MO-jal"/>
                             <constraint firstItem="hkR-w0-O5Y" firstAttribute="top" secondItem="uS4-z5-iHC" secondAttribute="bottom" constant="4" id="fHT-Ge-8qq"/>
                             <constraint firstItem="RbX-TL-MUT" firstAttribute="centerX" secondItem="KIz-F5-DtG" secondAttribute="centerX" id="g8y-Fw-Mo6"/>
+                            <constraint firstItem="cBM-pa-LvA" firstAttribute="leading" secondItem="Son-yk-0c5" secondAttribute="leading" constant="30" id="lot-PH-2Bl"/>
                             <constraint firstItem="ziC-y2-d4P" firstAttribute="top" secondItem="hkR-w0-O5Y" secondAttribute="bottom" constant="20" id="nha-fl-Kgv"/>
                             <constraint firstItem="bwT-VG-PKm" firstAttribute="top" secondItem="RbX-TL-MUT" secondAttribute="bottom" constant="40" id="pS5-b4-ICh"/>
                             <constraint firstItem="RbX-TL-MUT" firstAttribute="top" secondItem="HUI-Bq-164" secondAttribute="bottom" constant="40" id="qZx-EA-sgG"/>
@@ -356,6 +369,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bl7-oW-DCd"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="P1D-Xl-O68" id="MAM-EO-2lW"/>
+                        <outlet property="emailTextField" destination="UIo-WK-1t8" id="ffV-6b-c3F"/>
+                        <outlet property="nameTextField" destination="mJV-d3-kGh" id="C0p-e6-9sn"/>
+                        <outlet property="professionTextField" destination="UIo-WK-1t8" id="2aB-KH-vRA"/>
+                        <outlet property="saveButton" destination="Q1O-2L-4t1" id="LgW-ug-CoG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYx-2T-S1R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
